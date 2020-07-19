@@ -17,8 +17,7 @@ module.exports = function (config) {
       "app/klondike/piles/foundationPile.js",
       "app/klondike/piles/remainderPile.js",
       "app/klondike/piles/tableauPile.js",
-      "app/klondike/*.js",
-      "tests/**/*.js"
+      "app/klondike/*.js"
     ],
 
     autoWatch: false,
