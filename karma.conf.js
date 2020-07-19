@@ -35,8 +35,6 @@ module.exports = function (config) {
       "karma-junit-reporter"
     ],
 
-    singleRun: true,
-
     reporters: ['progress', 'junit'],
 
     junitReporter: {
