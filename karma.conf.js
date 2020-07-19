@@ -36,6 +36,8 @@ module.exports = function (config) {
 
     singleRun: true,
 
+    failOnFailingTestSuite: false,
+
     reporters: ['junit'],
 
     junitReporter: {
