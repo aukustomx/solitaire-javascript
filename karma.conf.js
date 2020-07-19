@@ -21,7 +21,7 @@ module.exports = function (config) {
       "tests/**/*.js"
     ],
 
-    autoWatch: true,
+    autoWatch: false,
 
     frameworks: ["jasmine"],
 
@@ -35,7 +35,9 @@ module.exports = function (config) {
       "karma-junit-reporter"
     ],
 
-    reporters: ['progress', 'junit'],
+    singleRun: true,
+
+    reporters: ['junit'],
 
     junitReporter: {
       outputDir: "tests",
