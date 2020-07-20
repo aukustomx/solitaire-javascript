@@ -25,7 +25,7 @@ module.exports = function (config) {
 
     frameworks: ["jasmine"],
 
-    browsers: ["Chrome", "Firefox", "PhantomJS"],
+    browsers: ["PhantomJS"],
 
     plugins: [
       "karma-chrome-launcher",
@@ -35,7 +35,11 @@ module.exports = function (config) {
       "karma-junit-reporter"
     ],
 
+    singleRun: true,
+
     failOnFailingTestSuite: false,
+
+    failOnEmptyTestSuite: false,
 
     reporters: ['junit'],
 
