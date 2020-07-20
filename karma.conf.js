@@ -17,7 +17,8 @@ module.exports = function (config) {
       "app/klondike/piles/foundationPile.js",
       "app/klondike/piles/remainderPile.js",
       "app/klondike/piles/tableauPile.js",
-      "app/klondike/*.js"
+      "app/klondike/*.js",
+      "tests/**/*.js" 
     ],
 
     autoWatch: false,
@@ -34,17 +35,14 @@ module.exports = function (config) {
       "karma-junit-reporter"
     ],
 
-    singleRun: true,
-
     failOnFailingTestSuite: false,
 
     reporters: ['junit'],
 
     junitReporter: {
-      outputDir: "tests",
-      outputFile: "test-results.xml",
-      suite: "",
-      useBrowserName: true
+      outputDir: "test_results",
+      outputFile: "test_out/unit.xml",
+      suite: "unit"
     }
 
   });
