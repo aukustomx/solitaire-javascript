@@ -45,7 +45,7 @@ module.exports = function (config) {
 
     junitReporter: {
       outputDir: "test_results",
-      outputFile: "test_out/unit.xml",
+      outputFile: "unit.xml",
       suite: "unit"
     }
 
